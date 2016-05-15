@@ -1,0 +1,29 @@
+<!DOCTYPE html >
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Start</title>
+    <link th:href="@{css/style.css}" rel="stylesheet" />
+</head>
+<body>
+ <div>
+     <span id="heureServer"></span>
+     <div id="clock" class="light">
+         <div class="display">
+             <div class="weekdays"></div>
+             <div class="ampm"></div>
+             <div class="alarm"></div>
+             <div class="digits"></div>
+         </div>
+     </div>
+ </div>
+<script th:src="@{bower_components/jquery/dist/jquery.min.js}"></script>
+<script th:src="@{bower_components/sockjs/sockjs.js}"></script>
+<script th:src="@{bower_components/stomp-websocket/lib/stomp.min.js}"></script>
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+<script th:src="@{commons/echo.js}"></script>
+ <script th:src="@{js/script.js}"></script>
+</body>
+</html>

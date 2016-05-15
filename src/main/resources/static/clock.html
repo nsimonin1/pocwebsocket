@@ -1,0 +1,28 @@
+<!DOCTYPE html >
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      >
+<head>
+    <meta charset="UTF-8"/>
+    <title>Start</title>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+ <div>
+     <span id="heureServer"></span>
+     <div id="clock" class="light">
+         <div class="display">
+             <div class="weekdays"></div>
+             <div class="ampm"></div>
+             <div class="alarm"></div>
+             <div class="digits"></div>
+         </div>
+     </div>
+ </div>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/sockjs/sockjs.js"></script>
+<script src="bower_components/stomp-websocket/lib/stomp.min.js"></script>
+ <script src="commons/client.js"></script>
+ <script src="js/script.js"></script>
+</body>
+</html>

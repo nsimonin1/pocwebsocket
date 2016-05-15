@@ -1,0 +1,16 @@
+{
+  "name": "app",
+  "cwd": "~/resources",
+  "directory": "bower_components",
+  "version": "1.0.0",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "sockjs": "0.3.4",
+    "stomp-websocket": "2.3.4",
+    "bootstrap": "^3.3.6"
+  },
+  "devDependencies": {}
+}
