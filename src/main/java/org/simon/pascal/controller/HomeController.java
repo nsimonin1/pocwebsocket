@@ -1,9 +1,5 @@
 package org.simon.pascal.controller;
 
-import org.simon.pascal.domains.CalcInput;
-import org.simon.pascal.domains.Result;
-import org.springframework.messaging.handler.annotation.MessageMapping;
-import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -13,9 +9,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class HomeController {
 
+    @RequestMapping("/")
+    public String index(){
+        return "redirect:/clock.htm";
+    }
 
-    @RequestMapping("/echo.html")
+    @RequestMapping("/clock.htm")
     public String start(){
-        return "echo";
+        return "clock";
     }
 }
